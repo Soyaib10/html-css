@@ -1,20 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR Tag Example</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR Tag Example</title>
 </head>
+
 <body>
+  <div style="background-color: bisque;">
     <h1 align="center">Section 1</h1>
-    <p>This is the first section of the document. This is the first section of the document. This is the first section of the document. This is the first section of the document.</p>
+    <p>This is the first section of the document. This is the first section of the document. This is the first section
+      of
+      the document. This is the first section of the document.</p>
 
-    <p style="text-align: center; color: red;">This is the first section of the document.</p>
-    <p>This is the first section of the document.</p>
+    <!--text formating-->
+    <p style="text-align: center; color: red;">
+      <strong>This is the first section of the document.</strong>
+    </p>
+    <p>Water's chemical formula is H<sub>2</sub>O</p>
+  </div>
 
-    <hr> <!-- Horizontal line -->
 
-    <h1>Section 2</h1>
-    <p>This is the second section of the document.</p>
+  <hr> <!-- Horizontal line -->
+  <div style="background-color: beige;">
+    <p style="color: goldenrod;"><strong>LISTING</strong></p>
+    <ol type="a" start="11">
+      <li>Install a Studio Code</li>
+      <li>Install necessary extensions</li>
+      <li>Create a new project folder</li>
+      <li>Create an index.html file</li>
+      <li>Write HTML content</li>
+    </ol>
+
+    <!--unordered nested-->
+    <ul id="section1">
+      <li>Fruit
+        <ul>
+          <li>Apple</li>
+          <li>Banana</li>
+          <li>Orange</li>
+        </ul>
+      </li>
+      <li>Vegetable
+        <ul>
+          <li>Carrot</li>
+          <li>Broccoli</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!--Ordered Nested List:-->
+    <ol>
+      <li>Step 1
+        <ol>
+          <li>Sub-step 1.1</li>
+          <li>Sub-step 1.2</li>
+        </ol>
+      </li>
+      <li>Step 2</li>
+      <li>Step 3</li>
+    </ol>
+  </div>
+
+
+
+  <hr> <!---->
+  <div>
+    <p style="color: goldenrod;"><strong>iframe- একটি পেজের মধ্যে অন্য একটি পেজ বা কনটেন্ট এম্বেড (অথবা আছড়ে ফেলতে)
+        করতে
+        সহায়ক। এটি সাধারণত ব্যবহৃত হয়,
+        যেমন ইউটিউব ভিডিও, গুগল ম্যাপস, বা অন্যান্য ওয়েব কনটেন্ট এম্বেড করার জন্য।</strong></p>
+
+
+    <iframe src="https://www.youtube.com/embed/zsYMgmb2oCM" width="300" height="300" frameborder="10px"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8999249780785!2d90.39945291529806!3d23.780711084582664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c76d0719f827%3A0x929f3a1b478ea377!2sJagannath%20University!5e0!3m2!1sen!2sbd!4v1680078037467!5m2!1sen!2sbd"
+      width="300" height="300" style="border:10px;" allowfullscreen="" loading="lazy"></iframe>
+
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="560" height="315" frameborder="0" allowfullscreen
+      loading="lazy"></iframe>
+
+    <hr>
+    <p style="color: goldenrod;"><strong>HYPERLINK</strong></p>
+
+    <a href="URL">Link Text</a><br>
+    <a href="#section1">Go to section 1</a>
+    <!--open link in new window-->
+    <p>
+      <a href="https://www.espncricinfo.com" target="_blank">Visit espncricinfo</a>
+    </p>
+    <p>
+      <a href="https://www.espncricinfo.com" title="Click to visit espncricinfo Website">Visit Example</a>
+    </p>
+
+    <a href="https://www.espncricinfo.com" target="_blank">
+      <img src="https://www.w3.org/Icons/w3c_home" alt="W3C width=" 200" height="100">
+    </a>
+  </div>
+
+  <hr>
+  <div style="background-color: azure;">
+    <h2>Employee Information</h2>
+
+    <style>
+      table {
+        width: 50%;
+        /* takes half of the parent container */
+        border-collapse: collapse;
+      }
+
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+
+      th,
+      td {
+        padding: 8px;
+        text-align: center;
+      }
+    </style>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Salary</th>
+      </tr>
+      <tr>
+        <td>John Doe</td>
+        <td>Manager</td>
+        <td>$5000</td>
+      </tr>
+      <tr>
+        <td>Jane Smith</td>
+        <td>Developer</td>
+        <td>$4000</td>
+      </tr>
+      <tr>
+        <td>Mike Johnson</td>
+        <td>Designer</td>
+        <td>$3500</td>
+      </tr>
+    </table>
+  </div>
+
+  <div>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Position</th>
+        <th>Salary</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Rrid</td>
+        <td>op</td>
+        <td>34</td>
+      </tr>
+      <tr>
+        <td>op</td>
+        <td>34</td>
+      </tr>
+    </table>
+  </div>
+
 </body>
+
 </html>
