@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>User Registration Form</h1>
+    <form action="submit-form.go" method="post" enctype="multipart/form-data">
+        <!--name input-->
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required><br><br>
+
+        <!-- ইমেইল ইনপুট -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        <!-- পাসওয়ার্ড ইনপুট -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required><br><br>
+
+        <!-- জেন্ডার রেডিও বোতাম -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other" required>
+        <label for="other">Other</label><br><br>
+
+        <!-- চেকবক্স -->
+        <label for="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            Subscribe to Newsletter
+        </label><br><br>
+
+        <!-- ড্রপডাউন -->
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">Select your country</option>
+            <option value="bd">Bangladesh</option>
+            <option value="in">India</option>
+            <option value="us">United States</option>
+        </select><br><br>
+
+        <!-- ফাইল আপলোড -->
+        <label for="profilePicture">Upload Profile Picture:</label><br>
+        <input type="file" id="profilePicture" name="profilePicture"><br><br>
+
+        <!-- অডিও ফাইল আপলোড -->
+        <label for="audio">Upload Audio:</label><br>
+        <input type="file" id="audio" name="audio" accept="audio/*" required><br><br>
+
+        <!-- ভিডিও ফাইল আপলোড -->
+        <label for="video">Upload Video:</label><br>
+        <input type="file" id="video" name="video" accept="video/*" required><br><br>
+
+        <!-- টেক্সট এরিয়া -->
+        <label for="bio">Short Bio:</label><br>
+        <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Write something about yourself..."></textarea><br>
+
+        <!-- সাবমিট এবং রিসেট বোতাম -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
