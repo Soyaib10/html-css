@@ -34,7 +34,7 @@
     </ol>
 
     <!--unordered nested-->
-    <ul id="section1">
+    <ul id="section1" type="square">
       <li>Fruit
         <ul>
           <li>Apple</li>
@@ -63,14 +63,19 @@
     </ol>
   </div>
 
+  <!-- HTML Description Lists -->
+  <dl>
+    <dt>Coffee</dt>
+    <dd>- black hot drink</dd>
+    <dd>- white cold drink</dd>
+    <dt>Milk</dt>
+    <dd>- white cold drink</dd>
+  </dl>
 
 
   <hr> <!---->
   <div>
-    <p style="color: goldenrod;"><strong>iframe- একটি পেজের মধ্যে অন্য একটি পেজ বা কনটেন্ট এম্বেড (অথবা আছড়ে ফেলতে)
-        করতে
-        সহায়ক। এটি সাধারণত ব্যবহৃত হয়,
-        যেমন ইউটিউব ভিডিও, গুগল ম্যাপস, বা অন্যান্য ওয়েব কনটেন্ট এম্বেড করার জন্য।</strong></p>
+    <p style="color: goldenrod;"><strong>iframe- does embade a page or link</strong></p>
 
 
     <iframe src="https://www.youtube.com/embed/zsYMgmb2oCM" width="300" height="300" frameborder="10px"
@@ -111,18 +116,24 @@
         width: 50%;
         /* takes half of the parent container */
         border-collapse: collapse;
+        margin: 2px;
+        margin-bottom: 10px;
       }
 
       table,
       th,
       td {
         border: 1px solid black;
+        border-style: dotted;
       }
 
       th,
       td {
         padding: 8px;
         text-align: center;
+      }
+      tr:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
       }
     </style>
 
