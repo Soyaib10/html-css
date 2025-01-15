@@ -1,0 +1,39 @@
+p {
+    background-color: aliceblue;
+    color: black;
+}
+
+p.dotted {
+    font-size: 20px;
+    border-style: dotted;
+    border-width: 7px;
+}
+
+p.dashed {
+    border: 3px solid grey;
+    border-radius: 5px;
+    border-color: bisque;
+}
+
+body {
+    background-color: aqua;
+    background-image: url("paper.gif");
+    background-repeat: repeat-x;
+
+    /* sets where to fit it; */
+    background-position: right top; 
+    background-attachment: fixed; /* will or will not move with the page scrolling*/
+
+}
+
+/* shorter version of body 
+When using the shorthand property the order of the property values is:
+background-color
+background-image
+background-repeat
+background-attachment
+background-position
+*/
+body {
+    background: lemonchiffon url("") no-repeat right top fixed;
+}
