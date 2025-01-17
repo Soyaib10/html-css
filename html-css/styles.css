@@ -1,3 +1,28 @@
+body {
+    font-family: "Sofia", sans-serif;
+    background-color: aqua;
+    background-image: url("paper.gif");
+    background-repeat: repeat-x;
+
+    /* sets where to fit it; */
+    background-position: right top;
+    background-attachment: fixed;
+    /* will or will not move with the page scrolling*/
+    background: lemonchiffon url("") no-repeat right top fixed;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li a {
+    display: block;
+    width: 60px;
+    background-color: #dddddd;
+  }
+
 p {
     background-color: aliceblue;
     color: black;
@@ -6,34 +31,80 @@ p {
 p.dotted {
     font-size: 20px;
     border-style: dotted;
-    border-width: 7px;
+    border-width: 4px;
+    padding: 10px;
+    width: 300px;
+    box-sizing: border-box;
+    /* only takes width value not padding */
 }
 
 p.dashed {
-    border: 3px solid grey;
+    border: 3px dashed grey;
     border-radius: 5px;
-    border-color: bisque;
+    border-color: rgb(250, 142, 205);
+    margin: 30px 23px 40px 100px;
+    margin: auto;
+    /* horizontally centetred */
+    outline: auto;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-transform: uppercase;
+    font-style: italic;
 }
 
-body {
-    background-color: aqua;
-    background-image: url("paper.gif");
-    background-repeat: repeat-x;
-
-    /* sets where to fit it; */
-    background-position: right top; 
-    background-attachment: fixed; /* will or will not move with the page scrolling*/
-
+.div1 {
+    margin-top: 20px;
+    height: 100px;
+    width: 50%;
+    background-color: powderblue;
 }
 
-/* shorter version of body 
-When using the shorthand property the order of the property values is:
-background-color
-background-image
-background-repeat
-background-attachment
-background-position
-*/
-body {
-    background: lemonchiffon url("") no-repeat right top fixed;
+
+/* unvisited link */
+a:link {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+.table1 {
+    border: 1px solid;
+    height: 10%;
+    width: 50%;
+    text-align: center;
+}
+
+table {
+    width: 100;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black; 
+    padding: 8px; 
+    text-align: left; 
+}
+
+tr {
+    border-bottom: 1px solid black; 
+}
+
+tr:hover {background-color: coral;}
