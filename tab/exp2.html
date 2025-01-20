@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tabs</title>
+  <style>
+    body {
+      margin: 20px;
+      font-family: Dank Mono;
+    }
+
+    /* hide radio buttons */
+    .tabs input[type="radio"] {
+      display: none;
+    }
+
+    /* Tabs container */
+    .tabs {
+      margin: 20px 0;
+    }
+
+    /* tab labels styling */
+    .tabs label {
+      display: inline-block;
+      padding: 10px 15px;
+      background: #e0dede;
+      border: 1px solid #ccc;
+      border-bottom: 1px;
+      border-radius: 3px 3px 0 0;
+      cursor: pointer;
+    }
+
+    /* hober effect */
+    .tabs label:hover {
+      background: #e6e6e6;
+    }
+
+    /* tab content styling */
+    .tab-content {
+      display: none;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-top: none;
+      border-bottom: 1px solid #ccc;
+      overflow: scroll;
+      background-color: bisque;
+    }
+
+    /* show selected tab content */
+    #tab1:checked~#content1,
+    #tab2:checked~#content2,
+    #tab3:checked~#content3,
+    #tab4:checked~#content4,
+    #tab5:checked~#content5 {
+      display: block;
+    }
+
+    /* content styling */
+    p {
+      line-height: 1.5;
+      margin: 0 0 1em 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="tabs">
+    <!-- tab inputs -->
+    <input type="radio" name="tabs" id="tab1" checked>
+    <label for="tab1">Competitive Programming</label>
+
+    <input type="radio" name="tabs" id="tab2">
+    <label for="tab2">DSA</label>
+
+    <input type="radio" name="tabs" id="tab3">
+    <label for="tab3">Golang</label>
+
+    <input type="radio" name="tabs" id="tab4">
+    <label for="tab4">Gin</label>
+
+    <input type="radio" name="tabs" id="tab5">
+    <label for="tab5">SQL</label>
+
+    <!-- tab content -->
+    <div id="content1" class="tab-content">
+      <h3>CP</h3>
+      <p>I love Competive Programming. I love Programming Contest. I love Competive Programming. I love Competive Programming. I love Competive Programming.</p>
+    </div>
+
+    <div id="content2" class="tab-content">
+      <h3>DSA</h3>
+      <p>I love Data Structure & Algorithm</p>
+    </div>
+
+    <div id="content3" class="tab-content">
+      <h3>GOLANG</h3>
+      <p>I love Golang</p>
+    </div>
+
+    <div id="content4" class="tab-content">
+      <h3>GIN</h3>
+      <p>I love gin</p>
+    </div>
+
+    <div id="content5" class="tab-content">
+      <h3>SQL</h3>
+      <p>I love PostrgreSQL</p>
+    </div>
+  </div>
+
+</body>
+
+</html>

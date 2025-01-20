@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exp</title>
+    <style>
+        /* Body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* Container for the tabs */
+        .tabs {
+            display: flex; /* Flexbox for horizontal layout */
+            cursor: pointer;
+        }
+
+        /* Style for each tab */
+        .tab {
+            flex: 1; /* Each tab takes equal space */
+            padding: 10px;
+            text-align: center;
+            background: #f1f1f1;
+            border: 1px solid #ccc;
+        }
+
+        /* Hover effect for tabs */
+        .tab:hover {
+            background: #e0e0e0;
+        }
+
+        /* Hide the content by default */
+        .tab-content {
+            display: none;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-top: none; /* Remove top border to make it look connected to the tab */
+        }
+
+        /* Hide the radio buttons */
+        .tabs input[type="radio"] {
+            display: none;
+        }
+
+        /* Display the content of the corresponding tab when it's checked */
+        #tab1:checked ~ .content1,
+        #tab2:checked ~ .content2,
+        #tab3:checked ~ .content3 {
+            display: block;
+        }
+
+        /* Style the active tab */
+        #tab1:checked ~ .tabs label[for="tab1"],
+        #tab2:checked ~ .tabs label[for="tab2"],
+        #tab3:checked ~ .tabs label[for="tab3"] {
+            background: #fff; /* Change background when active */
+            font-weight: bold; /* Make active tab text bold */
+            border-bottom: 1px solid #fff; /* Remove border to visually connect with content */
+        }
+    </style>
+</head>
+<body>
+    <!-- Radio buttons to toggle between tabs -->
+    <input type="radio" id="tab1" name="tab" checked> <!-- Tab 1 by default selected -->
+    <input type="radio" id="tab2" name="tab">
+    <input type="radio" id="tab3" name="tab">
+
+    <!-- Tab labels for user interaction -->
+    <div class="tabs">
+        <label class="tab" for="tab1">Tab 1</label> <!-- Label for Tab 1 -->
+        <label class="tab" for="tab2">Tab 2</label> <!-- Label for Tab 2 -->
+        <label class="tab" for="tab3">Tab 3</label> <!-- Label for Tab 3 -->
+    </div>
+
+    <!-- Content for Tab 1 -->
+    <div class="tab-content content1">
+        <p>This is the content of Tab 1. This is the content of Tab 1. This is the content of Tab 1. This is the content of Tab 1. This is the content of Tab 1. </p>
+        <p>This is the content of Tab 1. This is the content of Tab 1. This is the content of Tab 1. This is the content of Tab 1. This is the content of Tab 1. </p>
+        <p>This is the content of Tab 1. This is the content of Tab 1. This is the content of Tab 1. This is the content of Tab 1. This is the content of Tab 1. </p>
+    </div>
+    <!-- Content for Tab 2 -->
+    <div class="tab-content content2">
+        <p>This is the content of Tab 2.</p>
+    </div>
+    <!-- Content for Tab 3 -->
+    <div class="tab-content content3">
+        <p>This is the content of Tab 3.</p>
+    </div>
+</body>
+</html>

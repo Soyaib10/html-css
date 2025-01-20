@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Agriculture</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        header {
+            background: linear-gradient(to right, #43a047, #66bb6a);
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            font-size: 1rem;
+        }
+
+        nav ul li a:hover {
+            color: #dcedc8;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?farm,fields') no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero h2 {
+            font-size: 3.5rem;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+        }
+
+        section {
+            padding: 60px 40px;
+        }
+
+        .about, .services {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about img, .services img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .about .content, .services .content {
+            max-width: 600px;
+        }
+
+        .about h3, .services h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #388e3c;
+        }
+
+        .about p, .services p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        .cta {
+            background: linear-gradient(to right, #66bb6a, #43a047);
+            color: white;
+            padding: 30px;
+            text-align: center;
+            margin-top: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta p {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .cta a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 15px 30px;
+            background: #2e7d32;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+            font-size: 1.1rem;
+        }
+
+        .cta a:hover {
+            background: #1b5e20;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+            font-size: 1rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Green Future</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div>
+            <h2>Modern Agriculture Solutions</h2>
+            <p>Empowering farmers with innovation and sustainable practices.</p>
+        </div>
+    </div>
+
+    <section id="about" class="about">
+        <img src="https://source.unsplash.com/800x600/?plants" alt="About Agriculture">
+        <div class="content">
+            <h3>About Us</h3>
+            <p>At Green Future, we are dedicated to transforming agriculture through cutting-edge technology and eco-friendly practices. Our mission is to ensure a sustainable future for the farming community.</p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="content">
+            <h3>Our Services</h3>
+            <p>We provide precision farming tools, expert consultations, and modern equipment to help farmers maximize their yield and reduce environmental impact.</p>
+        </div>
+        <img src="https://source.unsplash.com/800x600/?technology,farming" alt="Our Services">
+    </section>
+
+    <section class="cta">
+        <p>Ready to transform your farming practices? Join us in building a sustainable future.</p>
+        <a href="#contact">Get Started</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Green Future. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
