@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder View</title>
+    <style>
+        #showmessage {
+            display: none;
+        }
+
+        .message {
+            display: none;
+        }
+
+        #showmessage:checked ~ .message {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="checkbox" id="showmessage">
+    <label for="showmessage">Click me</label>
+    <div class="message">You ckicked</div>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DropMenu</title>
+    <style>
+        body {
+            font-family: Dank Mono;
+            padding: 20px;
+            line-height: 1.5;
+        }
+
+        /* hide radio buttons */
+        .dropmenu-input {
+            display: none;
+        }
+
+        /* style dropmenu sections */
+        .dropmenu-item {
+            margin-bottom: 5px;
+        }
+
+        /* style dropmenu headers */
+        .dropmenu-label {
+            display: block;
+            padding: 10px 15px;
+            background: #047a4b;
+            border: 1.5px solid #024e67;
+            border-radius: 3px;
+            cursor: pointer;
+            color: rgb(229, 228, 228);
+            font-weight: bold;
+        }
+
+        /* hover effect */
+        .dropmenu-label:hover {
+            background: rgb(4, 163, 112);
+        }
+
+        /* style content section */
+        .dropmenu-content {
+            max-height: 0;
+            overflow: scroll;
+            background: #cdcdcd;
+            border: 1.5px solid #024e67;
+            border-top: none;
+            border-bottom: none;
+            border-radius: 0 0 3px 3px;
+        }
+
+        /* show content when radio is checked */
+        .dropmenu-input:checked + .dropmenu-label + .dropmenu-content {
+            max-height: 200px;
+            padding: 15px;
+        }
+
+        /* style the active header */
+        .dropmenu-input:checked + .dropmenu-label {
+            background: #19ba5e;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropmenu">
+        <div class="dropmenu-item">
+            <input type="radio" name="dropmenu" id="section1" class="dropmenu-input" checked>
+            <label for="section1" class="dropmenu-label">Section 1</label>
+            <div class="dropmenu-content">
+                <p>
+                    I love Competive Programming. I love Programming Contest. I love Competive Programming. I love Competive Programming. I love Competive Programming.
+                    I love Programming Contest. I love Competive Programming. I love Competive Programming. I love Competive Programming.I love Programming Contest. I love Competive Programming. I love Competive Programming. I love Competive Programming.
+                </p>
+            </div>
+        </div>
+
+        <div class="dropmenu-item">
+            <input type="radio" name="dropmenu" id="section2" class="dropmenu-input">
+            <label for="section2" class="dropmenu-label">Section 2</label>
+            <div class="dropmenu-content">
+                <p>
+                    I love Data Structure & Algorithm. 
+                </p>
+            </div>
+        </div>
+
+        <div class="dropmenu-item">
+            <input type="radio" name="dropmenu" id="section3" class="dropmenu-input">
+            <label for="section3" class="dropmenu-label">Section 3</label>
+            <div class="dropmenu-content">
+                <p>
+                    I love Golang.
+                </p>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="dropmenu-item">
+            <input type="radio" name="dropmenu" id="section4" class="dropmenu-input">
+            <label for="section4" class="dropmenu-label">Section 4</label>
+            <div class="dropmenu-content">
+                <p>
+                    I love gin.
+                </p>
+                <p>
+                    I love PostrgreSQL.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

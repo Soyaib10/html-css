@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Folder View</title>
+    <style>
+        /* outer loop */
+        .tree-nav {
+            margin: 0;
+            padding: 20px;
+            font-family: Dank Mono;
+        }
+
+        /* outer loop */
+        .tree-nav ul {
+            list-style: none;
+            padding-left: 20px;
+        }
+
+        /* checkbox hiding */
+        .tree-nav input[type="checkbox"] {
+            display: none;
+        }
+
+        /* hide things inside */
+        .tree-nav ul.nested {
+            display: none;
+        }
+
+        /* connect checkbox with list item */
+        .tree-nav input[type="checkbox"]:checked~ul.nested {
+            display: block;
+        }
+
+        .tree-nav label::before {
+            content: "📁";
+            display: inline-block;
+            margin-right: 8px;
+        }
+
+        .file-item::before {
+            content: "📄";
+            margin-right: 8px;
+        }
+
+        .doc-item::before {
+            content: "📝";
+            margin-right: 8px;
+        }
+
+        .text-item::before {
+            content: "📃";
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="tree-nav">
+        <ul>
+            <li>
+                <input type="checkbox" id="folder1">
+                <label for="folder1">folder</label>
+
+                <ul class="nested">
+                    <li>
+                        <input type="checkbox" id="subfolder1">
+                        <label for="subfolder1">sub-folder</label>
+                        <ul class="nested">
+                            <input type="checkbox" id="subfolder2">
+                            <label for="subfolder2">sub-sub-folder</label>
+                            <li class="file-item">file1.pdf</li>
+                            <li class="doc-item">file2.doc</li>
+                        </ul>
+                    </li>
+                    
+                    <li class="file-item">me.pdf</li>
+                    <li class="text-item">me.txt</li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+
+</html>
