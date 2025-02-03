@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shape2</title>
+    <style>
+        .rectangle {
+            position: relative;
+            width: 300px;
+            height: 100px;
+            background-color: lightblue;
+            margin: 100px;
+        }
+
+        .rectangle::before {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            left: -99px;
+            background-color: transparent;
+            border: 50px solid transparent;
+            border-right: 50px solid lightblue;
+            border-bottom: 50px solid lightblue;
+        }
+
+        .rectangle::after {
+            position: absolute;
+            content: "";
+            width: 0;
+            height: 0;
+            right: -99px;
+            background-color: solid transparent;
+            border: 50px solid transparent;
+            border-left: 50px solid lightblue;
+            border-bottom: 50px solid lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="rectangle"></div>
+</body>
+
+</html>
