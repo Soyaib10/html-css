@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .double-elements {
+            position: relative;
+            margin: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .double-elements::before {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 40px solid transparent;
+            border-left: 40px solid rgb(3, 96, 128);
+            border-right: transparent;
+            left: 220px;
+            filter: drop-shadow(50px 0px 0px rgb(3, 96, 128));
+        }
+
+        .double-elements::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border: 40px solid transparent;
+            border-right: 40px solid rgb(3, 96, 128);
+            border-left: transparent;
+            right: 270px;
+            filter: drop-shadow(50px 0px 0px rgb(3, 96, 128));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="double-elements">
+        <h1>SWE</h1>
+    </div>
+</body>
+
+</html>
