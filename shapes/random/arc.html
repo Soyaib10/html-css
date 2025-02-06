@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .double-elements {
+            position: relative;
+            margin: 250px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgb(2, 153, 133);
+            width: 450px;
+        }
+
+        .double-elements::before {
+            position: absolute;
+            content: "";
+            width: 200px;
+            height: 100px;
+            border: 10px solid rgb(158, 8, 113);
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom: 0;
+            border-left: 0;
+            border-right: 0;
+            margin: 100px auto;
+            top: -30px;
+        }
+
+        .double-elements::after {
+            position: absolute;
+            content: "";
+            width: 200px;
+            height: 100px;
+            border: 10px solid rgb(158, 8, 113);
+            border-top-left-radius: 50%;
+            border-top-right-radius: 50%;
+            border-bottom: 0;
+            border-left: 0;
+            border-right: 0;
+            margin: 100px auto;
+            top: 0px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="double-elements">
+        <h3>HELLO BROTHERS</h3>
+    </div>
+</body>
+
+</html>
